@@ -34,19 +34,26 @@ O programa deverá mostrar o seguinte menu de opções:
 5. Mostrar um relatório geral (separado por dia), que exiba, inclusive, a descrição do tipo do serviço.
 6. Finalizar.
 Para a opção 1: deve-se cadastrar os tipos de serviços oferecidos pela empresa, com código e descrição.
+
 Para a opção 2: deve-se considerar que deverão ser cadastrados os serviços prestados ao longo do mês.
 Em cada dia podem ser cadastrados, no máximo, três serviços prestados.
 Utilize uma matriz capaz de armazenar em cada posição todas as informações referentes a um serviço
-prestado. Cada linha representa um dia do mês. Dessa maneira, considere a matriz com dimensão 30 × 3.
+prestado.
+
+Cada linha representa um dia do mês. Dessa maneira, considere a matriz com dimensão 30 × 3.
 solicite o dia em que o serviço foi prestado e as demais informações.
 lembre-se de que a empresa só pode prestar os serviços que já tenham sido cadastrados no vetor de
 tipo de serviços.
+
 Caso o usuário digite um código de tipo de serviço inválido, o programa deverá mostrar uma mensagem de erro.
 Quando o usuário tentar cadastrar mais de três serviços prestados em um mesmo dia, também deverá
 mostrar uma mensagem de erro.
+
 Para a opção 3: o programa deverá receber o dia que se deseja consultar e mostrar os respectivos serviços prestados.
+
 Para a opção 4: o programa deverá receber o valor mínimo e o valor máximo e mostrar os serviços
 prestados que estiverem nesse intervalo.
+
 Para a opção 5: o programa deverá mostrar todos os serviços prestados, conforme o exemplo a seguir.
 
 DIA 01
@@ -113,25 +120,30 @@ deverá ler os números dos aviões e o número de lugares disponíveis em cada 
 quatro posições, no qual cada posição representa um avião, e outro vetor também de quatro posições
 para armazenar os lugares disponíveis.
 O programa deverá mostrar o seguinte menu de opções:
-        1. Cadastrar o número dos aviões.
-        2. Cadastrar o número de lugares disponíveis em cada avião.
-        3. Reservar passagem.
-        4. Consultar por avião.
-        5. Consultar por passageiro.
-        6. Finalizar.
+                1. Cadastrar o número dos aviões.
+                2. Cadastrar o número de lugares disponíveis em cada avião.
+                3. Reservar passagem.
+                4. Consultar por avião.
+                5. Consultar por passageiro.
+                6. Finalizar.
 
 Imagine que poderão ser registradas até 60 reservas e que cada uma deverá possuir o número do avião
 e o nome do passageiro.
 Para realizar a opção 1, deverá ser solicitado ao usuário o número dos quatro aviões disponíveis.
+
 Para realizar a opção 2, deverá ser solicitado ao usuário o número de lugares disponíveis em cada avião
 cadastrado na opção 1.
+
 Para realizar a opção 3, deverá ser verificado se o número do avião digitado é válido. Posteriormente,
 checar se, no avião escolhido, ainda existe lugar disponível. Caso exista, o programa deverá diminuir o
 total de vagas e mostrar a mensagem Reserva confirmada. Caso contrário, deverá mostrar a mensagem
 Voo lotado. Observe que não podem ser feitas mais de 60 reservas.
+
 Para realizar a opção 4, deverá ser solicitado o número do avião desejado e, posteriormente, deverão
 ser exibidas todas as suas reservas.
+
 Para realizar a opção 5, deverá ser solicitado o nome do passageiro e, posteriormente, deverão ser exibidas todas as reservas feitas em seu nome.
+
 A opção 6 encerra o programa.
 
 <a href="/Solved Exercises/prog04/prog04.c">Prog04.c</a>
@@ -145,25 +157,25 @@ empresa deseja informatizar sua folha de pagamento, faça um programa que leia o
 horas trabalhadas no mês, o turno e a categoria dos funcionários, não permitindo que sejam informados turnos e categorias inexistentes. O programa deverá calcular o valor da hora trabalhada, conforme
 a tabela a seguir, adotando o valor de R$ 550,00 para o salário-mínimo.
 
-Categoria         Turno                 Valor da hora trabalhada
-G                   N                      18% do salário-mínimo
-G                 M ou V                   15% do salário-mínimo
-O                   N                       13% do salário-mínimo
-O                 M ou V                    10% do salário-mínimo
+        Categoria         Turno                 Valor da hora trabalhada
+        G                   N                      18% do salário-mínimo
+        G                 M ou V                   15% do salário-mínimo
+        O                   N                       13% do salário-mínimo
+        O                 M ou V                    10% do salário-mínimo
 
 O programa deverá calcular o salário inicial dos funcionários, com base no valor da hora e no número
 de horas trabalhadas. Todos recebem um auxílio-alimentação, de acordo com o seu salário inicial, conforme a tabela a seguir.
 
-Salário inicial                 Auxílio-alimentação
- R$ 550,00                     20% do salário inicial
- R$ 550,00 e R$ 800,00         15% do salário inicial
- R$ 800,00                     5% do salário inicial
+        Salário inicial                 Auxílio-alimentação
+         R$ 550,00                     20% do salário inicial
+         R$ 550,00 e R$ 800,00         15% do salário inicial
+         R$ 800,00                     5% do salário inicial
 
 O programa deverá mostrar o nome, o número de horas trabalhadas, o valor da hora trabalhada, o
 salário inicial, o auxílio-alimentação e o salário final (salário inicial + auxílio-alimentação) de todos os funcionários. Ele deverá apresentar o seguinte menu de opções:
-1. Cadastrar funcionários.
-2. Mostrar folha de pagamento.
-3. sair...
+        1. Cadastrar funcionários.
+        2. Mostrar folha de pagamento.
+        3. sair...
 
 <a href="/Solved Exercises/prog05/prog05.c">Prog05.c</a>
 
@@ -192,13 +204,38 @@ e) Determine e mostre o valor total vendido.
 Crie um programa para ler o código, o sexo (M — masculino; F — feminino) e o número de horas-
 -aula ministradas pelos professores de uma escola durante um mês. sabe-se que um professor ganha
 R$ 60,50 hora-aula e que a escola possui dez professores. Após a leitura, o programa deverá mostrar:
+
 a) Uma listagem contendo o código, o salário bruto, o desconto e o salário líquido de todos o professores.
+
 b) A média aritmética dos salários brutos dos professores do sexo masculino.
+
 c) A média aritmética dos salários brutos dos professores do sexo feminino.
+
 Os descontos devem ser assim calculados:
 
-Sexo            Até 70 horas/aula ao mês            Mais que 70 horas/aula ao mês
-Masculino               10%                                     8%
-Feminino                7%                                      5% 
+        Sexo            Até 70 horas/aula ao mês            Mais que 70 horas/aula ao mês
+        Masculino               10%                                     8%
+        Feminino                7%                                      5% 
 
 <a href="/Solved Exercises/prog07/prog07.c">Prog07.c</a>
+
+### Prog 08
+
+Veja os campos de alguns registros:
+Professor (número de registro, nome, cod_título, total h/a semanal)
+Título (cod_título, descrição, valor hora/aula)
+Elabore um programa que:
+
+■■ Crie uma rotina para cadastrar os títulos. sabe-se que nessa escola existem cinco títulos.
+
+■■ Crie uma rotina para cadastrar os professores. sabe-se que nessa escola trabalham 14 professores,
+e cada um deve estar associado a um título previamente cadastrado.
+
+
+■■ Crie uma rotina para mostrar a relação de professores, conforme o layout a seguir.
+
+        No do registro      Nome                Título (descrição)      Valor hora/ aula        Total H/A       Total geral
+        111                 João da Silva       Mestre                      R$ 60,50               10          R$ 605,00
+        113                 Maria Oliveira      Especialista                R$ 40,00               8           R$ 320,00
+
+<a href="/Solved Exercises/prog08/prog08.c">Prog08.c</a>
