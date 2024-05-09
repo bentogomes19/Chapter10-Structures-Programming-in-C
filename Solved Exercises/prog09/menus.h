@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <windows.h>
-
+/*...MENUS E MENSAGENS DE ALERTA...*/
 void menu_clientes() // Menu para o cadastro de clientes 
 {
     printf("****************************************\n");
@@ -47,6 +47,26 @@ void menu_cadastros() // Menu de cadastro
     printf("[03] - Voltar\n");
 }
 
+void menu_movimentacoes() // Menu de movimentação das Notas fiscais
+{
+    printf("*****************************\n");
+    printf("****** NOTAS FISCAIS ********\n");
+    printf("*****************************\n\n");
+    printf("[01] - Ver Produtos Cadastrados\n");
+    printf("[02] - Nota Fiscal de Saída\n");
+    printf("[03] - Voltar\n");
+}
+
+void menu_consultas() // Menu de Consultas das Notas fiscais / produtos e clientes
+{
+    printf("*****************************\n");
+    printf("********* CONSULTAS *********\n");
+    printf("*****************************\n\n");
+    printf("[01] - Consultar Produtos por PRECO (R$)\n");
+    printf("[02] - Consultar Notas fiscais e itens da nota\n");
+    printf("[03] - Voltar\n");
+}
+
 /* Msg para Codigo inválido*/
 void codigo_invalido() // Função para código inválido no programa
 {
@@ -78,6 +98,17 @@ void produtos_MAX() // Alerta o usuário caso o sistema atinja a capacidade máx
     system("cls");
 }
 
+void NF_MAX() // Alerta o usuário caso o sistema atinja a capacidade máxima de notas fiscais cadastrados
+{
+    system("cls");
+    printf("Erro no Sistema... Sistema com 5 Notas fiscais já cadastradas...\n");
+    Sleep(700);
+    printf("Cadastros permitidos: 5 Notas Fiscais.\n");
+    Sleep(1000);
+    system("cls");
+}
+
+
 void msg_client0() // Caso o sistem não tenha clientes cadastrados mostrar ao usuário uma mensagem
 {
     system("cls");
@@ -90,7 +121,6 @@ void msg_cliente1() // Caso o sistema não encontre um cliente --> Verificação
 {
     printf("Código do cliente não foi encontrado... Tente novamente...\n");
     Sleep(1300);
-    system("cls");
 }
 
 void msg_produto1() // Caso o sistem não tenha clientes cadastrados mostrar ao usuário uma mensagem

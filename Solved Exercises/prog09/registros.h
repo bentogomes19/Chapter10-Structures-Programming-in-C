@@ -12,7 +12,7 @@ struct nota
 {
     int num_NF; // Número da nota fiscal
     int cod_cliente; // Código do Cliente
-    float total_geral; // Total de notas em geral
+    float total_geral; // Total geral
 };
 
 struct itens_nota
@@ -41,7 +41,8 @@ struct produto product[6]; // Cadastros de até 6 produtos
 int count1 = 0; // Contabiliza os clientes cadastrados
 int count2 = 0; // Contabiliza os produtos
 int count3 = 0; // Contabiliza as 5 notas fiscais
-int count4 = 0; // Contabiliza os itens da nota fiscal
+int count4; // Contabiliza os itens da nota fiscal
+int count5 = 0; // Contabiliza globalmente os itens da nota fiscal
 
 
 #endif

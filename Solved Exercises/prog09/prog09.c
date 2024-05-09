@@ -12,6 +12,8 @@
 #include "menus.h"
 #include "cadclientes.h"
 #include "cadprodutos.h"
+#include "movimentacoes.h"
+#include "consultas.h"
 
 int main(void)
 {   // setlocale(LC_ALL, "Portuguese");
@@ -21,7 +23,6 @@ int main(void)
         menu_iniciar();
         printf("Escolha uma das opões acima: ");
         scanf("%d", &op);
-
         switch (op)
         {
         case 1:
@@ -29,8 +30,12 @@ int main(void)
             cadastros();
             break;
         case 2:
+            system("cls");
+            movimentacoes();
             break;
         case 3:
+            system("cls");
+            consultas();
             break;
         case 4:
             break;
