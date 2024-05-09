@@ -11,7 +11,7 @@
 #include "consultas.h"
 #include "menus.h"
 #include "cadclientes.h"
-#include "cad_produtos.h"
+#include "cadprodutos.h"
 
 int main(void)
 {   // setlocale(LC_ALL, "Portuguese");

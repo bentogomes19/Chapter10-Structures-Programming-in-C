@@ -46,6 +46,7 @@ void menu_cadastros() // Menu de cadastro
     printf("[02] - Manutenção de PRODUTOS\n");
     printf("[03] - Voltar\n");
 }
+
 /* Msg para Codigo inválido*/
 void codigo_invalido() // Função para código inválido no programa
 {
@@ -91,4 +92,20 @@ void msg_cliente1() // Caso o sistema não encontre um cliente --> Verificação
     Sleep(1300);
     system("cls");
 }
+
+void msg_produto1() // Caso o sistem não tenha clientes cadastrados mostrar ao usuário uma mensagem
+{
+    system("cls");
+    printf("O sistema não há produtos cadastrados...\n");
+    Sleep(1000);
+    system("cls");
+}
+
+void msg_produto2() // Caso o sistema não encontre um código digitado pelo usuário
+{
+    printf("Não há produtos cadastrados em nosso sistema com este código...Tente novamente...\n");
+    Sleep(1200);
+}
+
+
 #endif

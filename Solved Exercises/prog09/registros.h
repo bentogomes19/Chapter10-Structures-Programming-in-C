@@ -12,7 +12,7 @@ struct nota
 {
     int num_NF; // Número da nota fiscal
     int cod_cliente; // Código do Cliente
-    float total_geral;
+    float total_geral; // Total de notas em geral
 };
 
 struct itens_nota
@@ -25,16 +25,16 @@ struct itens_nota
 
 struct produto
 {
-    int cod_produto;
+    int cod_produto; // Código do produto
     char desc[30]; // Descrição do produto (Computador, Leite, Madeira...)
-    char unidade;
-    float preco_unit;
-    int qtd_estoque;
+    char unidade[20]; // Tipo de produto (Eletrodomestico, Fruta, Roupa e etc..)
+    float preco_unit; // Preço Unitário dos produtos
+    int qtd_estoque; // Quantidade de produtos armazenados no estoque
 };
 
 struct cliente cli[3]; // Cadastro de 3 Clientes
-struct nota nota[5]; // -> Gravações de 5 notas fiscais
-struct itens_nota itens_nota[10]; // -> Dois itens em cada nota fiscal portanto 10 itens;
+struct nota nota[5] = {0}; // -> Gravações de 5 notas fiscais
+struct itens_nota itens_nota[10] = {0}; // -> Dois itens em cada nota fiscal portanto 10 itens;
 struct produto product[6]; // Cadastros de até 6 produtos
 
 

@@ -4,6 +4,10 @@
         "cadastro.h": "c",
         "stdlib.h": "c",
         "string.h": "c",
-        "registros.h": "c"
+        "registros.h": "c",
+        "ctype.h": "c",
+        "menus.h": "c",
+        "cadastros.h": "c",
+        "windows.h": "c"
     }
 }
