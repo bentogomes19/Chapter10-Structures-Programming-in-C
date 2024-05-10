@@ -5,6 +5,7 @@
 ## Exercises [PT-BR]
 
 ### Prog 01
+<hr >
 
 Faça um programa que realize o cadastro de contas bancárias com as seguintes informações: número
 da conta, nome do cliente e saldo. O banco permitirá o cadastramento de apenas 15 contas e não poderá haver mais que uma conta com o mesmo número. Crie o menu de opções a seguir.
@@ -18,6 +19,7 @@ Menu de opções:
 <a href="/Solved Exercises/prog01/prog01.c">Prog01.c</a>
 
 ### Prog 02
+<hr >
 
 Uma empresa prestadora de serviços armazena informações sobre os serviços prestados. sabe-se que a 
 empresa pode realizar no máximo três serviços diariamente. É de interesse de sua direção manter um
@@ -68,6 +70,7 @@ DIA 02
 <a href="/Solved Exercises/prog02/prog02.c">Prog02.c</a>
 
 ### Prog 03
+<hr >
 
 Faça um programa que utilize os registros a seguir.
 CLIENTES        DOCUMENTOS
@@ -114,6 +117,7 @@ deverá ficar livre para uma nova inclusão.
 
 
 ### Prog 04
+<hr >
 
 Faça um programa que efetue reserva de passagens aéreas de determinada companhia. O programa
 deverá ler os números dos aviões e o número de lugares disponíveis em cada um. Utilize um vetor de
@@ -149,6 +153,7 @@ A opção 6 encerra o programa.
 <a href="/Solved Exercises/prog04/prog04.c">Prog04.c</a>
 
 ### Prog 05
+<hr >
 
 Uma empresa possui 18 funcionários, sobre os quais se tem estas informações: nome, número de horas
 trabalhadas no mês, turno de trabalho (pode ser M — matutino; V — vespertino; ou N — noturno),
@@ -180,6 +185,7 @@ salário inicial, o auxílio-alimentação e o salário final (salário inicial 
 <a href="/Solved Exercises/prog05/prog05.c">Prog05.c</a>
 
 ### Prog 06
+<hr >
 
 Uma empresa contratou 15 funcionários temporários. De acordo com o valor das vendas mensais, os
 funcionários ganham pontos que determinarão seus salários ao fim de cada mês. sabe-se que eles trabalharão nos meses de novembro de 2011 a janeiro de 2012. Faça um programa que:
@@ -199,7 +205,7 @@ e) Determine e mostre o valor total vendido.
 
 
 ### Prog 07
-
+<hr >
 
 Crie um programa para ler o código, o sexo (M — masculino; F — feminino) e o número de horas-
 -aula ministradas pelos professores de uma escola durante um mês. sabe-se que um professor ganha
@@ -220,6 +226,7 @@ Os descontos devem ser assim calculados:
 <a href="/Solved Exercises/prog07/prog07.c">Prog07.c</a>
 
 ### Prog 08
+<hr >
 
 Veja os campos de alguns registros:
 Professor (número de registro, nome, cod_título, total h/a semanal)
@@ -239,3 +246,52 @@ e cada um deve estar associado a um título previamente cadastrado.
         113                 Maria Oliveira      Especialista                R$ 40,00               8           R$ 320,00
 
 <a href="/Solved Exercises/prog08/prog08.c">Prog08.c</a>
+
+### Prog 09
+<hr >
+
+9. Crie um pequeno sistema para controle automatizado de estoque com os seguintes registros:
+
+        Clientes          Notas               Itens_notas                Produtos
+        Cod_cliente     Numero_NF               Numero_NF               Cod_produto
+        Endereco        Cod_cliente             Cod_produto              Descricao
+        Telefone        Total_geral             Quantidade                Unidade
+                                                Preco_venda            Preco_unitario
+                                                                       Qtdade_estoque
+
+
+O sistema deverá conter os seguintes módulos: CADASTROs, MOVIMENTAÇÕES, CONsUlTAS,
+além de uma opção para sAÍDA. 
+ 
+ 1. O módulo CADAsTROs deverá fazer a manutenção das informações sobre clientes e produtos (seis
+produtos e três clientes):
+
+a) Manutenção de ClIENTEs — inclusão, tomando cuidado para não cadastrar dois clientes com o mesmo
+código; alteração, o único campo que não pode ser alterado é o código; exclusão, tomando cuidado para não
+permitir a exclusão de clientes que possuam nota fiscal.
+
+b) Manutenção de PRODUTOs — inclusão, tomando cuidado para não cadastrar dois produtos com o mesmo
+código; alteração, o único campo que não pode ser alterado é o código; exclusão, tomando cuidado para não
+permitir a exclusão de produtos pertencentes a alguma nota fiscal. 
+
+2. O módulo MOVIMENTAÇÕEs deverá permitir a digitação de notas fiscais de saída, de acordo com as especificações a seguir, supondo que poderão ser gravadas até cinco notas fiscais contendo dois itens em cada uma: 
+
+a) Não cadastrar duas notas com o mesmo número.
+
+b) Uma nota só pode ser emitida a um cliente que já exista.
+
+c) Todos os produtos da nota devem estar previamente cadastrados; caso contrário, emitir mensagem de erro.
+
+d) Não cadastrar duas vezes um produto na mesma nota.
+
+e) Quando um produto for confirmado, baixar sua quantidade em estoque e gravar um registro em ITENs_NOTAs.
+
+3. O módulo CONsUlTAs deverá permitir as consultas descritas a seguir:
+
+a) Todos os produtos com preços entre dois valores digitados pelo usuário.
+
+b) Todas as notas e os itens da nota de um cliente escolhido pelo usuário.
+
+c) Todas as notas e os itens da nota com total geral superior a um valor escolhido pelo usuário.
+
+<a href="/Solved Exercises/prog09/prog09.c">Prog09.c</a>
