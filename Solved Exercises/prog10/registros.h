@@ -19,11 +19,10 @@ struct Funcionario // Registro dos funcionários
 
 
 struct filial filial[4]; // Estrutura das filiais, é permitido o cadastro de 4 filiais somente
-struct Funcionario Func[5] = {0}; // Os funcionários a serem cadastrados -> 4 Vendedores e 1 gerente por filial
+struct Funcionario func[20] = {0}; // Os funcionários a serem cadastrados -> 4 Vendedores e 1 gerente por filial
+/* Se cada filial deve possuir 5 funcionários logo serão 20 funcionários no total */
 
 int count_func = 0; // contabiliza o número de funcionário já cadastrados 
 int count_fil = 0; // Contabiliza o número de filiais cadastradas
 int count_vend = 0; // Contabiliza o número de vendedores cadastrados
-
-
 #endif

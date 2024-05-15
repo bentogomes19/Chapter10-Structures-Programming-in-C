@@ -295,3 +295,24 @@ b) Todas as notas e os itens da nota de um cliente escolhido pelo usuário.
 c) Todas as notas e os itens da nota com total geral superior a um valor escolhido pelo usuário.
 
 <a href="/Solved Exercises/prog09/prog09.c">Prog09.c</a>
+
+### Prog 10
+<hr>
+
+10. Uma empresa do ramo de material esportivo deseja ter um controle automatizado dos funcionários
+que trabalham em cada uma de suas filiais. sabe-se que essa empresa possui quatro filiais com quatro
+vendedores e um gerente em cada uma delas. Todos devem ser cadastrados como funcionários.
+
+Faça um programa que realize esse controle, com as seguintes rotinas:
+
+a) Cadastrar filial, observando que não podem existir duas filiais com o mesmo número.
+
+b) Cadastrar funcionário, observando que: 
+    1) não podem existir dois funcionários com o mesmo número; 
+    2) cada funcionário deve ser cadastrado em uma filial;
+    3) cada filial pode ter apenas um gerente e no máximo quatro vendedores;
+
+c) Criar uma consulta a todas as filiais, mostrando o nome do gerente e dos vendedores, o valor total gasto com
+pagamento de salários por filial e o valor gasto com pagamento de salário geral.
+
+<a href="/Solved Exercises/prog10/prog10.c">Prog10.c</a>

@@ -41,7 +41,7 @@ void cadastro_filiais() // Rotina cadastros de filiais --> observando que não p
                 if(achou == 1)// a condição é acionada quando o código inserido pelo usuário coincidir com o código armazenado no sistema
                 {
                     printf("\nJá existe uma filial com este número... Tente novamente...\n");
-                    Sleep(2000);
+                    Sleep(2000); 
                     system("cls");
                     menu_footer();
                 }
