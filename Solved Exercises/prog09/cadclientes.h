@@ -187,7 +187,7 @@ void alterar_clientes() // o único campo que não pode ser alterado é o códig
 
 void excluir_clientes() //exclusão, tomando cuidado para não permitir a exclusão de clientes que possuam nota fiscal.
 {
-    int cod_usr;
+    int cod_usr, visu;
     printf("***************************\n");
     printf("*  Excluir Clientes       *\n");
     printf("***************************\n");
@@ -202,10 +202,10 @@ void excluir_clientes() //exclusão, tomando cuidado para não permitir a exclus
         int posi;
         do
         {
-            printf("Digite o código do cliente: ");
+            printf("Digite o código do cliente |: ");
             scanf("%d", &cod_usr);
             fflush(stdin);
-            
+
             for(int i=0; i<3; i++)
             {
                 if(cod_usr == cli[i].cod_cliente)
@@ -238,7 +238,7 @@ void excluir_clientes() //exclusão, tomando cuidado para não permitir a exclus
             }
             else
             {
-                for(int i=0; i<count1; i++)
+                for(int i=0; i<3; i++)
                 {
                     cli[i].cod_cliente = cli[i+1].cod_cliente;
                     strcpy(cli[i+1].end, cli[i].end);

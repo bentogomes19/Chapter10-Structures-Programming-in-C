@@ -9,6 +9,7 @@
         "menus.h": "c",
         "cadastros.h": "c",
         "windows.h": "c",
-        "mostrar_relacao.h": "c"
+        "mostrar_relacao.h": "c",
+        "cadastrar_disciplinas.h": "c"
     }
 }

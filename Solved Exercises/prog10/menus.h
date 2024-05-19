@@ -15,7 +15,6 @@ void menu_footer() // Cabeçalho do programa
 {
     printf("\t\t\t -->>> Controle Automatizado de Funcionários - Empresa <<--\n");
     printf("\t\t\t\t -->>> Filiais Cadastradas: %d / 4 <<<---\n", count_fil);
-
 }
 
 void menu_principal() // Menu principal do programa 
