@@ -400,3 +400,37 @@ Na opção 6: deve ser descoberto e mostrado o mês com maior venda.
 Na opção 7: o programa termina.
 
 <a href="/Solved Exercises/prog12/prog12.c">Prog12.c</a>
+
+### Prog 13
+<hr>
+
+2. A prefeitura de uma cidade fez uma pesquisa entre seus habitantes, coletando dados sobre salário,
+idade e número de filhos. Faça um programa que leia esses dados de 20 pessoas, calcule e mostre:
+
+■■ a média de salário da população;
+
+■■ a média do número de filhos;
+
+■■ o maior salário;
+
+■■ o percentual de mulheres com salário superior a R$ 1.000,00.
+
+<a href="/Solved Exercises/prog13/prog13.c">Prog13.c</a>
+
+### Prog 14
+<hr>
+
+3. Foi realizada uma pesquisa sobre algumas características físicas de 50 habitantes de certa região. De cada
+habitante foram coletados os seguintes dados: sexo, altura, idade e cor dos olhos (A – azuis; V – verdes; ou
+C – castanhos).
+Faça um programa que leia esses dados, armazene-os em um registro do tipo vetor e determine:
+
+■■ a média de idade das pessoas com olhos castanhos e altura superior a 1,60 m;
+
+■■ a maior idade entre os habitantes;
+
+■■ a quantidade de indivíduos do sexo feminino com idade entre 20 e 45 anos (inclusive) ou que tenham olhos verdes e altura inferior a 1,70 m;
+
+■■ o percentual de homens.
+
+<a href="/Solved Exercises/prog14/prog14.c">Prog14.c</a>
