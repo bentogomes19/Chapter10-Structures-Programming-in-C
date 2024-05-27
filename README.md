@@ -1,6 +1,7 @@
 # Chapter 10 - Structures Programming Logic in C 💻
 
 .. Exercises from Fundamentals of Computer Programming [PT-BR] | C/C++ PASCAL JAVA
+All of the programs should run only on Windows.
 
 ## Exercises [PT-BR]
 
@@ -434,3 +435,71 @@ Faça um programa que leia esses dados, armazene-os em um registro do tipo vetor
 ■■ o percentual de homens.
 
 <a href="/Solved Exercises/prog14/prog14.c">Prog14.c</a>
+
+
+### Prog 15
+<hr>
+
+4. Foi realizada uma pesquisa entre 20 habitantes de uma cidade. De cada habitante foram coletados estes dados:
+idade, sexo, renda familiar e número de filhos. Faça um programa que leia esses dados, armazenando-os em
+um vetor, calcule e mostre a média de salário entre os habitantes,
+a menor e a maior idade do grupo e a quantidade de mulheres com mais de dois filhos e com renda familiar inferior a R$ 600,00.
+
+<a href="/Solved Exercises/prog15/prog15.c">prog15.c</a>
+
+
+### Prog 16
+<hr>
+
+5. Faça um programa que leia o código, a descrição, o valor unitário e a quantidade em estoque dos 50 produtos
+comercializados por uma papelaria. Essas informações devem ser armazenadas em um registro do tipo vetor
+em ordem crescente de código. Depois da leitura, o programa deverá:
+
+■■ realizar uma rotina que permita alterar a descrição, o valor unitário e a quantidade em estoque de
+determinado produto, que deverá ser localizado por meio da informação de seu código;
+
+■■ realizar uma rotina que mostre todos os produtos cuja descrição comece com determinada letra
+(informada pelo usuário);
+
+■■ mostrar todos os produtos com quantidade em estoque inferior a cinco unidades.
+
+
+<a href="/Solved Exercises/prog16/prog16.c">prog16.c</a>
+
+### Prog 17
+<hr>
+
+7. Considere que exista um registro com os seguintes atributos: codigo_cliente e nome_cliente e outro
+registro com os seguintes atributos: No_conta, valor_compra, codigo_cliente. Faça um programa
+que:
+■■ inclua clientes, não permitindo que dois clientes possuam o mesmo código;
+
+■■ inclua contas, verificando se o código do cliente informado já está cadastrado. Caso não esteja, não
+deverá permitir a inclusão;
+
+■■ remova determinado cliente. Antes de executar a remoção, deverá verificar se ele não está vinculado
+a alguma conta. Se possuir, deverá mostrar a mensagem Exclusão não permitida. Caso contrário,
+deverá proceder à exclusão.
+
+<a href="/Solved Exercises/prog17/prog17.c">prog17.c</a>
+
+
+### Prog 18
+
+8. Foi feita uma estatística em 15 estados brasileiros para coletar dados sobre acidentes de trânsito. Em cada
+estado foram observados os seguintes aspectos:
+■■ nome do estado;
+
+■■ número de veículos que circularam nesse estado (em 2012);
+
+■■ número de acidentes de trânsito (em 2012).
+
+Crie um programa que permita conhecer:
+
+■■ o maior e o menor índice de acidentes de trânsito e o nome dos estados em que eles ocorreram;
+
+■■ o percentual de veículos em cada estado;
+
+■■ a média de acidentes em cada um dos estados.
+
+<a href="/Solved Exercises/prog18/prog18.c">prog18.c</a>

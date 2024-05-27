@@ -111,9 +111,9 @@ int main(void)
 
         cont_hab++;
         printf("Deseja continuar s/n?: ");
-        scanf("%c", &resp);
-        fflush(stdin);
+        resp = getchar();
         resp = toupper(resp);
+        fflush(stdin);
 
         if (resp == 'N')
         {

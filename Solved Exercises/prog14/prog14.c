@@ -25,7 +25,6 @@ void func_sexo(int i)
     {
         printf("Habitante 👽 %d -> Digite o seu sexo (M ou F):  ", i + 1);
         scanf("%c", &hab[i].sexo);
-        fflush(stdin);
         hab[i].sexo = toupper(hab[i].sexo);
 
         if (hab[i].sexo != 'F' && hab[i].sexo != 'M')
@@ -46,7 +45,6 @@ void func_corOlhos(int i)
         printf("Habitante 👽 %d -> Digite a cor dos olhos: ", i + 1);
         scanf("%c", &hab[i].cor_olhos);
         hab[i].cor_olhos = toupper(hab[i].cor_olhos);
-        fflush(stdin);
 
         if (hab[i].cor_olhos != 'A' && hab[i].cor_olhos != 'V' && hab[i].cor_olhos != 'C')
         {
@@ -142,18 +140,15 @@ int main(void)
 
         printf("Habitante 👽 %d -> Digite a sua altura (m): ", i + 1);
         scanf("%f", &hab[i].altura);
-        fflush(stdin);
 
         printf("Habitante 👽 %d -> Digite a sua idade: ", i + 1);
         scanf("%d", &hab[i].idade);
-        fflush(stdin);
 
         func_corOlhos(i); // Função para inserir a cor dos olhos
         cont_hab++;
         printf("Deseja continuar s/n?: ");
         resp = getchar();
         resp = toupper(resp);
-        fflush(stdin);
 
         if (resp == 'N')
         {
