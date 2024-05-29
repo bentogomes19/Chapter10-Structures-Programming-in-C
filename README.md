@@ -1,6 +1,6 @@
 # Chapter 10 - Structures Programming Logic in C 💻
 
-.. Exercises from Fundamentals of Computer Programming [PT-BR] | C/C++ PASCAL JAVA
+20 Exercises from Fundamentals of Computer Programming [PT-BR] | C/C++ PASCAL JAVA
 All of the programs should run only on Windows.
 
 ## Exercises [PT-BR]
@@ -503,3 +503,61 @@ Crie um programa que permita conhecer:
 ■■ a média de acidentes em cada um dos estados.
 
 <a href="/Solved Exercises/prog18/prog18.c">prog18.c</a>
+
+
+### Prog 19
+
+11. Faça um programa que utilize as informações a seguir:
+
+
+                Médicos         Pacientes             Consultas
+                Cod_medico      Cod_pac              Num_prontuario
+                Nome            Nome_pac             Data_consulta
+                Endereco        Endereco              Diagnostico
+                Salario         Idade                 Cod_medico
+                                                      Cod_paciente
+O programa deverá:
+
+a) criar uma rotina para realizar inclusões e alterações no cadastro de pacientes e de médicos;
+
+b) criar uma rotina para excluir um médico (lembre-se: se existir alguma consulta realizada por esse médico, ele
+não poderá ser excluído);
+
+c) criar uma rotina para mostrar todas as consultas realizadas em uma data qualquer escolhida pelo usuário
+(lembre-se de mostrar também o nome do médico e o nome do paciente envolvido na consulta).
+
+<hr>
+
+<a href="/Solved Exercises/prog19/prog19.c">prog19.c</a>
+
+
+### Prog 20
+
+16. O acervo de uma biblioteca precisa ser informatizado. Para tanto, as principais informações das obras
+foram assim estruturadas:
+
+        Obra(numero do tombo, numero do exemplar, data compra)
+        Tombo(numero do tombo, nome da obra, nome do autor, nome da editora, codigo da area)
+
+
+Sabe-se que existem 20 tombos e, para cada um, há no máximo três exemplares.
+Defina vetores de registro para armazenar tais informações.
+Defina o menu de opções a seguir:
+
+1. Cadastrar tombos.
+
+2. Cadastrar obras.
+
+3. Mostrar obras por área.
+
+4. Mostrar obras por autor.
+
+5. Mostrar obras por editora.
+
+6. Encerrar o programa.
+
+Existem três áreas: 1 — exatas; 2 — humanas e sociais; e 3 — biomédicas.
+
+<hr>
+
+<a href="/Solved Exercises/prog20/prog20.c">prog20.c</a>

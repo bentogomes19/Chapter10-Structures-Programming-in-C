@@ -11,6 +11,7 @@
         "windows.h": "c",
         "mostrar_relacao.h": "c",
         "cadastrar_disciplinas.h": "c",
-        "function.h": "c"
+        "function.h": "c",
+        "sstream": "c"
     }
 }

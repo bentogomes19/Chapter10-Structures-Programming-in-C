@@ -66,6 +66,7 @@ void func_cadastrosMedPac(int op) // Função para o cadastro de pacientes e med
                     achou = false;
                     printf("Digite o codigo do medico: ");
                     scanf(" %d", &medico[i].cod_medico);
+                    fflush(stdin);
 
                     for (int j = 0; j < count_medicos; j++)
                     {
@@ -83,15 +84,20 @@ void func_cadastrosMedPac(int op) // Função para o cadastro de pacientes e med
 
                 printf("Cod %d -> Digite o nome: ", medico[i].cod_medico);
                 fgets(medico[i].nome, 40, stdin);
-                while ((c = getchar()) != '\n' && c != EOF)
-                    ;
+                medico[i].nome[strcspn(medico[i].nome, "\n")] = '\0';
+                fflush(stdin);
 
                 printf("Digite o endereco: ");
                 fgets(medico[i].endereco, 60, stdin);
                 medico[i].endereco[strcspn(medico[i].endereco, "\n")] = '\0';
+                fflush(stdin);
+
 
                 printf("Informe o salario (R$): ");
                 scanf(" %f", &medico[i].salario);
+                fflush(stdin);
+
+
 
                 count_medicos++;
                 printf("Medico cadastrado com sucesso...\n");
@@ -99,6 +105,7 @@ void func_cadastrosMedPac(int op) // Função para o cadastro de pacientes e med
                 printf("Deseja continuar s/n?: ");
                 scanf(" %c", &resp);
                 resp = toupper(resp);
+                fflush(stdin);
 
                 if (resp == 'N')
                 {
@@ -131,6 +138,7 @@ void func_cadastrosMedPac(int op) // Função para o cadastro de pacientes e med
                     achou = false;
                     printf("Digite o codigo do paciente: ");
                     scanf("%d", &paciente[i].cod_paciente);
+                    fflush(stdin);
 
                     for (int j = 0; j < count_pacientes; j++)
                     {
@@ -147,15 +155,20 @@ void func_cadastrosMedPac(int op) // Função para o cadastro de pacientes e med
 
                 printf("Digite o nome do paciente: ");
                 fgets(paciente[i].nome, 40, stdin);
-                while ((c = getchar()) != '\n' && c != EOF)
-                    ;
+                paciente[i].nome[strcspn(paciente[i].nome, "\n")] = '\0';
+                fflush(stdin);
+
+
 
                 printf("Digite o endereco: ");
                 fgets(paciente[i].endereco, 60, stdin);
                 paciente[i].endereco[strcspn(paciente[i].endereco, "\n")] = '\0';
+                fflush(stdin);
 
                 printf("Digite a idade: ");
                 scanf("%d", &paciente[i].idade);
+                fflush(stdin);
+
 
                 count_pacientes++;
                 printf("Paciente cadastrado com sucesso...\n");
@@ -163,7 +176,9 @@ void func_cadastrosMedPac(int op) // Função para o cadastro de pacientes e med
                 printf("Deseja continuar s/n?: ");
                 scanf(" %c", &resp);
                 resp = toupper(resp);
+                fflush(stdin);
 
+                
                 if (resp == 'N')
                 {
                     system("cls");
@@ -301,18 +316,15 @@ void func_marcarConsultas()
 
             printf("# %d ## Informe a data da consulta: ", consultas[i].num_prontuario);
             scanf("%d %d %d", &dia, &mes, &ano);
+            fflush(stdin);
             consultas[i].data_consulta[0] = dia;
             consultas[i].data_consulta[1] = mes;
             consultas[i].data_consulta[2] = ano;
 
-            while ((c = getchar()) != '\n' && c != EOF)
-                ;
-
             printf("# %d ## Informe o diagnostico: ", consultas[i].num_prontuario);
             fgets(consultas[i].diagnostico, 60, stdin);
             consultas[i].diagnostico[strcspn(consultas[i].diagnostico, "\n")] = '\0';
-            while ((c = getchar()) != '\n' && c != EOF)
-                ;
+            fflush(stdin);
 
             do
             {
@@ -320,6 +332,7 @@ void func_marcarConsultas()
 
                 printf("# %d ## Digite o codigo do medico: ", consultas[i].num_prontuario);
                 scanf("%d", &cod_medico);
+                fflush(stdin);
 
                 for (int j = 0; j < count_medicos; j++)
                 {
@@ -343,6 +356,7 @@ void func_marcarConsultas()
 
                 printf("# %d ## Digite o codigo do paciente: ", consultas[i].num_prontuario);
                 scanf("%d", &cod_paciente);
+                fflush(stdin);
 
                 for (int j = 0; j < count_pacientes; j++)
                 {
